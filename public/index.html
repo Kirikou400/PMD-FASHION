@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#080808">
+<title>PMD Society | Enter the Pressure</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=DM+Mono:wght@400;500&family=Manrope:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--black:#080808;--white:#f4f1e9;--red:#ff3b30;--pink:#f3aaa5;--display:'Archivo Black',Impact,sans-serif;--body:'Manrope',Arial,sans-serif;--mono:'DM Mono',monospace}
+*{box-sizing:border-box}html,body{margin:0;background:var(--black)}body{min-height:100vh;overflow:hidden;color:var(--white);font-family:var(--body)}
+.gate{position:relative;min-height:100svh;overflow:hidden;background:#080808}.film{position:absolute;inset:0;z-index:0;background:#111}.film video{width:100%;height:100%;object-fit:cover;object-position:center;filter:grayscale(.15) contrast(1.35) brightness(.52);transform:scale(1.06)}.film:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(0,0,0,.92),rgba(0,0,0,.5) 43%,rgba(0,0,0,.2)),linear-gradient(0deg,rgba(0,0,0,.7),transparent 35%,rgba(0,0,0,.5))}
+.noise{position:absolute;inset:0;z-index:1;pointer-events:none;opacity:.11;background-image:repeating-linear-gradient(0deg,transparent 0,transparent 3px,rgba(255,255,255,.16) 4px);mix-blend-mode:screen}.redwash{position:absolute;z-index:1;width:38vw;height:38vw;right:12vw;top:16vh;border-radius:50%;background:var(--red);filter:blur(110px);opacity:.16;mix-blend-mode:screen}.frame{position:absolute;z-index:2;width:min(62vw,840px);height:min(62vw,840px);right:-13vw;top:12vh;border:1px solid rgba(255,255,255,.48);transform:rotate(45deg);animation:spin 26s linear infinite}.frame:before,.frame:after{content:"";position:absolute;inset:5%;border:1px solid rgba(255,59,48,.85)}.frame:after{inset:14%;border-color:rgba(255,255,255,.18)}
+.corner{position:absolute;z-index:3;top:32px;left:4vw;right:4vw;display:flex;justify-content:space-between;align-items:center}.brand{display:block;width:104px;height:58px;object-fit:contain;object-position:left center;filter:contrast(1.2)}.serial{font:10px var(--mono);letter-spacing:.2em;text-transform:uppercase;color:#bbb8b0}
+.content{position:absolute;z-index:4;left:8vw;top:50%;transform:translateY(-45%);width:min(670px,80vw)}.kicker{display:flex;align-items:center;gap:13px;color:var(--red);font:500 10px var(--mono);letter-spacing:.25em;text-transform:uppercase}.kicker:after{content:"";width:72px;height:1px;background:var(--red)}h1{margin:26px 0 0;font:clamp(64px,10vw,156px)/.76 var(--display);letter-spacing:-.08em;text-transform:uppercase;text-shadow:8px 8px 0 rgba(255,59,48,.14)}h1 span{display:block;color:var(--pink);margin-left:10vw}h1 em{display:block;color:transparent;-webkit-text-stroke:1px var(--white);font-style:normal;margin-left:4vw}.tagline{margin:30px 0 0;color:#d0cdc4;font-size:13px;line-height:1.7}
+.enter-button{display:grid;grid-template-columns:1fr auto;align-items:center;gap:22px;position:relative;z-index:5;width:286px;height:68px;margin-top:30px;padding:0 21px;-webkit-appearance:none;appearance:none;border:2px solid var(--red);background:var(--red);color:var(--black);font:700 11px var(--mono);letter-spacing:.18em;text-align:left;text-transform:uppercase;cursor:pointer;box-shadow:9px 9px 0 rgba(255,255,255,.8);transition:background .2s,border-color .2s,box-shadow .2s}.enter-button span{display:block;white-space:nowrap}.enter-button .arrow{font-size:19px;line-height:1;letter-spacing:0}.enter-button:hover,.enter-button:focus-visible{background:var(--white);border-color:var(--white);box-shadow:5px 5px 0 var(--red);outline:3px solid transparent;outline-offset:4px}
+.side-label{position:absolute;z-index:4;right:4vw;top:50%;writing-mode:vertical-rl;transform:translateY(-50%);color:var(--white);font:10px var(--mono);letter-spacing:.28em;text-transform:uppercase}.side-label b{color:var(--red);font-weight:500}.footer{position:absolute;z-index:4;left:4vw;right:4vw;bottom:28px;display:flex;justify-content:flex-end;color:#b5b2aa;font:9px var(--mono);letter-spacing:.15em;text-transform:uppercase}.footer span{text-align:right;line-height:1.65}
+@keyframes spin{to{transform:rotate(405deg)}}
+@media(max-width:700px){.film video{object-position:65% center}.frame{width:105vw;height:105vw;right:-43vw;top:22vh}.redwash{width:70vw;height:70vw;right:-10vw;top:25vh;opacity:.2}.corner{top:24px;left:24px;right:24px}.brand{width:84px;height:50px}.serial{font-size:8px}.content{left:24px;top:48%;width:calc(100% - 48px)}h1{font-size:clamp(57px,17vw,101px)}h1 span{margin-left:12vw}.tagline{margin-top:25px;font-size:12px}.enter-button{width:100%;max-width:315px;height:64px;margin-top:27px}.side-label{right:20px;top:54%;font-size:8px}.footer{left:24px;right:24px;bottom:23px;font-size:8px}.footer span{text-align:right;max-width:160px}}
+</style>
+</head>
+<body>
+<main class="gate">
+  <div class="film" aria-hidden="true"><video autoplay muted loop playsinline preload="auto"><source src="/images/hero%20video.mp4" type="video/mp4"></video></div>
+  <div class="noise" aria-hidden="true"></div>
+  <div class="redwash" aria-hidden="true"></div>
+  <div class="frame" aria-hidden="true"></div>
+  <header class="corner"><img class="brand" src="/images/PMD%20LOGO.jpeg" alt="PMD Society logo"><div class="serial">Object 001 / Enter</div></header>
+  <section class="content" aria-labelledby="title"><div class="kicker">The pressure chamber</div><h1 id="title">Made<br><span>under</span><br><em>pressure</em></h1><p class="tagline">A study in weight, movement, and becoming.</p><button class="enter-button" type="button" onclick="window.location.assign('/main.html')"><span>Enter PMD Society</span><span class="arrow" aria-hidden="true">↗</span></button></section>
+  <div class="side-label"><b>24° 01° N</b>&nbsp; / &nbsp;Kaduna / Nigeria</div>
+  <footer class="footer"><span>Pressure makes diamonds<br>001 / Turn the pressure into direction</span></footer>
+</main>
+</body>
+</html>
